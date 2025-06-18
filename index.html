@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil Shaji - Computer Science Student & Developer</title>
+    <meta name="description"
+        content="Portfolio of Akhil Shaji - Computer Science engineering student at SNGCE College, passionate about programming, cybersecurity, and web development.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="smooth-scroll">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div
+                    class="font-bold text-xl bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                    Akhil Shaji
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <button onclick="scrollToSection('home')"
+                        class="text-gray-700 hover:text-purple-600 transition-colors">Home</button>
+                    <button onclick="scrollToSection('about')"
+                        class="text-gray-700 hover:text-purple-600 transition-colors">About</button>
+                    <button onclick="scrollToSection('skills')"
+                        class="text-gray-700 hover:text-purple-600 transition-colors">Skills</button>
+                    <button onclick="scrollToSection('experience')"
+                        class="text-gray-700 hover:text-purple-600 transition-colors">Experience</button>
+                    <button onclick="scrollToSection('portfolio')"
+                        class="text-gray-700 hover:text-purple-600 transition-colors">Portfolio</button>
+                    <button onclick="scrollToSection('contact')"
+                        class="text-gray-700 hover:text-purple-600 transition-colors">Contact</button>
+                </div>
+
+                <a href="https://linkedin.com/in/akhil-shaji-pkl" target="_blank" rel="noopener noreferrer"
+                    class="p-2 rounded-full bg-purple-600 text-white hover:bg-purple-700 transition-colors">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30"
+            style="background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <div class="lg:w-1/2 space-y-6">
+                    <div class="animate-fade-in">
+                        <h2 class="text-lg md:text-xl font-medium mb-4 opacity-90">
+                            Hey, I'm Akhil 👋
+                        </h2>
+                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                            <span class="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+                                Computer Science
+                            </span>
+                            <br>
+                            <span class="text-white">Student</span>
+                        </h1>
+                    </div>
+
+                    <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto lg:mx-0 animate-fade-in">
+                        I'm a passionate Computer Science engineering student at SNGCE College.
+                        I help build beautiful digital experiences and love exploring different fields in technology.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
+                        <button onclick="scrollToSection('about')"
+                            class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold rounded-md transition-colors">
+                            View My Journey
+                        </button>
+                        <button onclick="scrollToSection('skills')"
+                            class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 text-lg font-semibold rounded-md transition-colors">
+                            Explore Skills
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm border border-white/30 flex items-center justify-center animate-scale-in overflow-hidden">
+                            <div
+                                class="w-56 h-56 md:w-72 md:h-72 rounded-full bg-gray-300 flex items-center justify-center">
+                                <span class="text-gray-600 text-lg">
+                                    <img src="1750180834437.jpg" alt="Akhil Shaji" class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover" />
+                                  
+                                </span>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full animate-pulse"></div>
+                        <div class="absolute -bottom-4 -left-4 w-6 h-6 bg-pink-400 rounded-full animate-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A passionate learner with an insatiable curiosity for technology and innovation
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I'm Akhil Shaji, a Computer Science engineering student at SNGCE College,
+                        currently in my journey from 2023 to 2027. My passion lies in exploring
+                        the vast landscape of computer science and continuously expanding my knowledge
+                        in various programming languages and technologies.
+                    </p>
+
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        What drives me is the endless possibilities that technology offers.
+                        From cybersecurity to web development, from algorithms to artificial intelligence,
+                        I believe in learning with purpose and building solutions that make a difference.
+                    </p>
+
+                    <div class="bg-gradient-to-r from-purple-100 to-blue-100 p-6 rounded-lg">
+                        <h3 class="font-semibold text-lg mb-2 text-gray-800">My Philosophy</h3>
+                        <p class="text-gray-700">
+                            "Every line of code is an opportunity to learn something new.
+                            Every challenge is a stepping stone to becoming a better developer."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="graduation-cap" class="h-8 w-8 text-purple-600 mr-3"></i>
+                            <h3 class="text-xl font-semibold">Education</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-gray-700">
+                                    <strong>B.Tech in Computer Science</strong><br>
+                                    SNGCE College<br>
+                                    2023 - 2027 (Expected)
+                                </p>
+                            </div>
+                            <div class="border-t pt-4">
+                                <p class="text-gray-700">
+                                    <strong>Higher Secondary Education</strong><br>
+                                    Computer Science<br>
+                                    Completed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="heart" class="h-8 w-8 text-red-500 mr-3"></i>
+                            <h3 class="text-xl font-semibold">Interests</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Programming</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Cybersecurity</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Web
+                                Development</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Machine
+                                Learning</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Problem
+                                Solving</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="lightbulb" class="h-8 w-8 text-yellow-500 mr-3"></i>
+                            <h3 class="text-xl font-semibold">Learning Goals</h3>
+                        </div>
+                        <p class="text-gray-700">
+                            Currently exploring AI/ML, cloud technologies, and advanced cybersecurity concepts.
+                            Always eager to take on new challenges and collaborate on innovative projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Skills & Technologies</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A diverse toolkit built through continuous learning and hands-on experience
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow text-center">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
+                    <div class="space-y-2">
+                        <span
+                            class="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm mr-2 mb-2">HTML</span>
+                        <span
+                            class="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm mr-2 mb-2">CSS</span>
+                        <span
+                            class="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm mr-2 mb-2">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow text-center">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+                    <div class="space-y-2">
+                        <span
+                            class="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm mr-2 mb-2">Java</span>
+                        <span
+                            class="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm mr-2 mb-2">C</span>
+                        <span
+                            class="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm mr-2 mb-2">Python</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow text-center">
+                    <div class="text-4xl mb-4">🔐</div>
+                    <h3 class="text-xl font-semibold mb-4">Database & Security</h3>
+                    <div class="space-y-2">
+                        <span
+                            class="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm mr-2 mb-2">SQL</span>
+                        <span
+                            class="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm mr-2 mb-2">Cybersecurity</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">Skill Proficiency</h3>
+                <div class="grid md:grid-cols-2 gap-6" id="skills-container">
+                    <!-- Skills will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Experience</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Building practical skills through internships and real-world learning experiences
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Python Intern -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-2 bg-gradient-to-r from-blue-500 to-green-500"></div>
+                    <div class="bg-gradient-to-r from-blue-50 to-green-50 p-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="p-3 rounded-full bg-gradient-to-r from-blue-500 to-green-500 text-white">
+                                    <i data-lucide="code" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">Python Intern</h3>
+                                    <div class="flex items-center space-x-2 mt-1">
+                                        <i data-lucide="building" class="w-4 h-4 text-gray-600"></i>
+                                        <span class="text-gray-600 font-medium">Right Soft Options</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="bg-white text-gray-700 px-3 py-1 rounded-full text-sm">Internship</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Gained hands-on experience in Python programming, working on real-world projects and
+                            learning industry best practices.
+                            Developed problem-solving skills and enhanced my understanding of software development
+                            lifecycle.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                    <i data-lucide="code" class="w-4 h-4 mr-2 text-purple-600"></i>
+                                    Skills Developed
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Python</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Problem
+                                        Solving</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Software
+                                        Development</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                    <i data-lucide="calendar" class="w-4 h-4 mr-2 text-blue-600"></i>
+                                    Key Achievements
+                                </h4>
+                                <ul class="space-y-2">
+                                    <li class="text-gray-700 text-sm flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        Completed multiple Python projects
+                                    </li>
+                                    <li class="text-gray-700 text-sm flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        Learned industry coding standards
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Intern -->
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="h-2 bg-gradient-to-r from-purple-500 to-red-500"></div>
+                    <div class="bg-gradient-to-r from-purple-50 to-red-50 p-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="p-3 rounded-full bg-gradient-to-r from-purple-500 to-red-500 text-white">
+                                    <i data-lucide="shield" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">Cybersecurity Intern</h3>
+                                    <div class="flex items-center space-x-2 mt-1">
+                                        <i data-lucide="building" class="w-4 h-4 text-gray-600"></i>
+                                        <span class="text-gray-600 font-medium">Facein Technologies</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="bg-white text-gray-700 px-3 py-1 rounded-full text-sm">Internship</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Explored the fascinating world of cybersecurity, learning about threat analysis, security
+                            protocols, and defensive strategies.
+                            Gained practical knowledge in identifying vulnerabilities and implementing security
+                            measures.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                    <i data-lucide="code" class="w-4 h-4 mr-2 text-purple-600"></i>
+                                    Skills Developed
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Cybersecurity</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Threat
+                                        Analysis</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Security
+                                        Protocols</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                    <i data-lucide="calendar" class="w-4 h-4 mr-2 text-blue-600"></i>
+                                    Key Achievements
+                                </h4>
+                                <ul class="space-y-2">
+                                    <li class="text-gray-700 text-sm flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        Learned security fundamentals
+                                    </li>
+                                    <li class="text-gray-700 text-sm flex items-start">
+                                        <span class="text-green-500 mr-2">✓</span>
+                                        Conducted vulnerability assessments
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Currently building my project portfolio - exciting developments coming soon!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow text-center group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🌐</div>
+                    <h3 class="text-lg font-semibold mb-2">Web Development Fundamentals</h3>
+                    <span
+                        class="inline-block px-3 py-1 border border-blue-500 text-blue-600 rounded-full text-sm mb-4">In
+                        Progress</span>
+                    <p class="text-gray-600 mb-4">Building responsive websites using HTML, CSS, and JavaScript</p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">HTML5</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">CSS3</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow text-center group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">☕</div>
+                    <h3 class="text-lg font-semibold mb-2">Java Programming Projects</h3>
+                    <span
+                        class="inline-block px-3 py-1 border border-green-500 text-green-600 rounded-full text-sm mb-4">Learning</span>
+                    <p class="text-gray-600 mb-4">Object-oriented programming concepts and data structures</p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">Java</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">OOP</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">Data Structures</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow text-center group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🔒</div>
+                    <h3 class="text-lg font-semibold mb-2">Cybersecurity Lab</h3>
+                    <span
+                        class="inline-block px-3 py-1 border border-purple-500 text-purple-600 rounded-full text-sm mb-4">Exploring</span>
+                    <p class="text-gray-600 mb-4">Hands-on experience with security tools and techniques</p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">Security Tools</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">Penetration Testing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-8 mb-12">
+                <div class="text-center">
+                    <i data-lucide="rocket" class="w-12 h-12 mx-auto text-purple-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Projects Coming Soon!</h3>
+                    <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+                        I'm currently working on several exciting projects that will showcase my skills in
+                        web development, programming, and cybersecurity. Stay tuned for updates!
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <div class="max-w-lg mx-auto bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-xl font-semibold mb-4">Want to Collaborate?</h3>
+                    <p class="text-gray-600 mb-6">
+                        I'm always excited to work on new projects and learn from experienced developers.
+                        If you have any interesting projects or learning opportunities, let's connect!
+                    </p>
+                    <button onclick="scrollToSection('contact')"
+                        class="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-md font-semibold transition-colors">
+                        Get In Touch
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                        <p class="text-lg opacity-90 mb-8">
+                            Whether you're looking for a passionate learner to join your team,
+                            want to collaborate on a project, or just want to connect and share ideas,
+                            I'm always excited to meet new people in the tech community.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-white/20 p-3 rounded-full">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <a href="mailto:akhilshajipkl@gmail.com"
+                                    class="opacity-90 hover:opacity-100 transition-opacity">
+                                    akhilshajipkl@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-white/20 p-3 rounded-full">
+                                <i data-lucide="linkedin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">LinkedIn</h4>
+                                <a href="https://linkedin.com/in/akhil-shaji-pkl" target="_blank"
+                                    rel="noopener noreferrer" class="opacity-90 hover:opacity-100 transition-opacity">
+                                    linkedin.com/in/akhil-shaji-pkl
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-white/20 p-3 rounded-full">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Location</h4>
+                                <span class="opacity-90">Kerala, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6">
+                    <h3 class="text-white text-xl font-semibold mb-6">Send Me a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <input type="text" name="name" placeholder="Your Name" required
+                                class="w-full bg-white/10 border border-white/30 text-white placeholder-white/70 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-white/50">
+                        </div>
+
+                        <div>
+                            <input type="email" name="email" placeholder="Your Email" required
+                                class="w-full bg-white/10 border border-white/30 text-white placeholder-white/70 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-white/50">
+                        </div>
+
+                        <div>
+                            <textarea name="message" placeholder="Your Message" required rows="5"
+                                class="w-full bg-white/10 border border-white/30 text-white placeholder-white/70 px-4 py-3 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-white/50"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-white text-purple-600 hover:bg-gray-100 font-semibold py-3 rounded-md transition-colors flex items-center justify-center">
+                            <i data-lucide="send" class="w-5 h-5 mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="mb-8">
+                    <h3
+                        class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-4">
+                        Akhil Shaji
+                    </h3>
+                    <p class="text-gray-400 max-w-md mx-auto">
+                        Computer Science Student | Passionate Learner | Future Innovator
+                    </p>
+                </div>
+
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="mailto:akhilshajipkl@gmail.com"
+                        class="bg-gray-800 hover:bg-purple-600 p-3 rounded-full transition-colors">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/akhil-shaji-pkl" target="_blank" rel="noopener noreferrer"
+                        class="bg-gray-800 hover:bg-blue-600 p-3 rounded-full transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                </div>
+
+                <div class="border-t border-gray-800 pt-8">
+                    <p class="text-gray-500 text-sm">
+                        © 2024 Akhil Shaji. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"> </script>
+</body>
+
+</html>
